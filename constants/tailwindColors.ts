@@ -1,0 +1,18 @@
+export const TailwindColors = {
+  background: "#E5E5E5",
+  foreground: "#0A0A0A",
+  muted: "#525252",
+  card: "#ffffff",
+  border: "#D4D4D4",
+  primary: "#118EE9",
+  primaryForeground: "#ffffff",
+  secondary: "#ffffff",
+  success: "#00B517",
+  warning: "#FE9A00",
+  danger: "#FF3B30",
+  info: "#1447E6",
+  accentGreen: "#00B517",
+  accentOrange: "#FE9A00",
+  accentRed: "#FF3B30",
+  accentBlue: "#50A2FF",
+} as const;
