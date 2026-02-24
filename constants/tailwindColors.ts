@@ -1,10 +1,10 @@
 export const TailwindColors = {
-  background: "#E5E5E5",
+  background: "#F5F5F5",
   foreground: "#0A0A0A",
   muted: "#525252",
   card: "#ffffff",
   border: "#D4D4D4",
-  primary: "#118EE9",
+  primary: "#BB1624",
   primaryForeground: "#ffffff",
   secondary: "#ffffff",
   success: "#00B517",
@@ -13,6 +13,6 @@ export const TailwindColors = {
   info: "#1447E6",
   accentGreen: "#00B517",
   accentOrange: "#FE9A00",
-  accentRed: "#FF3B30",
+  accentRed: "#800800",
   accentBlue: "#50A2FF",
 } as const;

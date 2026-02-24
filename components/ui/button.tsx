@@ -114,10 +114,10 @@ export function Button({
   }
 
   const pressableStyle = className
-    ? [{ borderRadius: 5, alignItems: "center" }, style]
+    ? [{ borderRadius: 24, alignItems: "center" }, style]
     : [
         {
-          borderRadius: 5,
+          borderRadius: 24,
           alignItems: "center",
           backgroundColor: bgColor,
           ...(variant === "outline" || variant === "secondary"

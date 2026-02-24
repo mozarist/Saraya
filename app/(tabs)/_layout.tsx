@@ -2,12 +2,13 @@ import { Tabs } from "expo-router";
 import React from "react";
 
 import { HapticTab } from "@/components/haptic-tab";
-import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Colors } from "@/constants/theme";
+import Entypo from '@expo/vector-icons/Entypo';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import { Text, View } from "react-native";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -25,10 +26,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Beranda",
+          title: "Home",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home" : "home-outline"}
+              name="home"
               size={24}
               color={color}
             />
@@ -38,10 +39,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="activities"
         options={{
-          title: "Aktivitas",
+          title: "Leaderboard",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "receipt" : "receipt-outline"}
+            <FontAwesome6
+              name="ranking-star"
               size={24}
               color={color}
             />
@@ -51,7 +52,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="pay"
         options={{
-          title: "",
+          title: "Lesson",
           tabBarIcon: () => (
             <View
               style={{
@@ -59,7 +60,7 @@ export default function TabLayout() {
                 height: 100,
                 alignItems: "center",
                 justifyContent: "center",
-                marginTop: -12,
+                marginTop: -42,
               }}
             >
               <View
@@ -71,8 +72,7 @@ export default function TabLayout() {
                   justifyContent: "center",
                 }}
               >
-                <MaterialIcons name="qr-code-scanner" size={36} color="white" />
-                <Text className="text-primary-foreground text-xs">Bayar</Text>
+                <Entypo name="book" size={36} color="white" />
               </View>
             </View>
           ),
@@ -81,10 +81,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="wallet"
         options={{
-          title: "Dompet",
+          title: "Rewards",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "wallet" : "wallet-outline"}
+            <FontAwesome6
+              name="medal"
               size={24}
               color={color}
             />
@@ -94,10 +94,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: "Saya",
+          title: "Profile",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "person" : "person-outline"}
+            <FontAwesome6
+              name="user-tie"
               size={24}
               color={color}
             />
